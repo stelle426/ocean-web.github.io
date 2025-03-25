@@ -1,0 +1,144 @@
+/* 主容器布局 */
+.main-container {
+    display: flex;
+    margin-top: 80px; /* 避开导航栏固定定位 */
+}
+
+/* 侧边栏卡片式设计 */
+.sidebar-card {
+    width: 200px;
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+.sidebar-item {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #666;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.sidebar-item.active {
+    background: #0d6efd;
+    color: white;
+}
+
+.sidebar-item:hover {
+    background: #e9ecef;
+}
+
+/* 文章内容区样式 */
+.article-section {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+/* 文章头部样式 */
+.article-header {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px; /* 在标题和图片卡片之间添加间距 */
+}
+
+/* 左侧：标题、作者、时间卡片 */
+.article-info-card {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.article-info-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* 右侧：图片卡片 */
+.article-image-container {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* 文章卡片样式 */
+.article-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+/* 文章正文样式 */
+.article-content p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px; /* 增加段落之间的间距 */
+    text-indent: 2em; /* 首行缩进 */
+}
+
+.article-content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.article-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 相关主题样式（示例） */
+.related-topics {
+    position: fixed;
+    right: 20px;
+    top: 120px;
+    width: 200px;
+}
+
+.related-topics h4 {
+    color: #42a5f5;
+    margin-bottom: 15px;
+}
+
+.related-topics ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-topics li {
+    margin: 10px 0;
+}
+
+.related-topics a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.related-topics a:hover {
+    text-decoration: underline;
+}
+

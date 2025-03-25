@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索结果</title>
+    <link rel="stylesheet" href="css/protection.css">
+    <link rel="stylesheet" href="css/protection-Plastic.css">
+	<link rel="stylesheet" href="css/search.css"> 
+    <script src="js/search.js"></script>
+</head>
+<body>
+    <!-- 导航栏（与protection.html一致，保护海洋保持蓝色激活状态） -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="海洋保护 logo" class="logo-icon">
+            <div class="logo">海洋世界</div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="protection.html" class="active">海洋保护</a>
+            <a href="#">保护动物</a>
+            <a href="#">海洋生物分类</a>
+            <a href="#">海洋生物图鉴</a>
+            <a href="#">联系我们</a>
+        </div>
+        <form class="search-form">
+            <input type="text" class="search-input" placeholder="输入搜索内容" id="searchInput" onkeyup="if(event.keyCode===13) searchArticles()">
+            <button type="button" class="search-btn" onclick="searchArticles()">搜索</button>
+        </form>
+    </nav>
+
+    <!-- 搜索结果容器 -->
+    <div class="main-container">
+        <div id="searchResults" class="results-container"></div>
+    </div>
+</body>
+</html>

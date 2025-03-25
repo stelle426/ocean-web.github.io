@@ -1,0 +1,104 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #42a5f5;
+}
+
+.nav-links a.active {
+    color: #42a5f5;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.search-btn {
+    padding: 8px 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.search-btn:hover {
+    background: #42a5f5;
+    border-color: #42a5f5;
+}
+
+/* 主视觉区域样式 */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}

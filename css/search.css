@@ -1,0 +1,143 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 导航栏整体样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 导航栏Logo部分 */
+.logo-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.logo {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* 导航链接样式 */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #42a5f5;
+}
+.nav-links a.active {
+    color: #42a5f5;
+}
+
+/* 搜索表单样式 */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.search-input {
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    min-width: 200px; 
+}
+.search-btn {
+    padding: 8px 15px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.search-btn:hover {
+    background: #42a5f5;
+    border-color: #42a5f5;
+}
+
+/* 搜索结果卡片样式 */
+.results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-result-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.search-result-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-content h3 {
+    color: #0d6efd;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .search-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-input {
+        padding: 10px 14px;
+    }
+
+    .search-btn {
+        padding: 10px 20px;
+    }
+
+    .search-result-card {
+        border-radius: 12px;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+}
